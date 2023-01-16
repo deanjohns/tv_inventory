@@ -17,7 +17,7 @@ const Dashboard = () => {
 
   const getItems = () => {
     setIsLoading(true);
-    API.get('/')
+    API.get('/mock')
       .then(res => {
         console.log("res GET", res);
         setItems(res.data);
